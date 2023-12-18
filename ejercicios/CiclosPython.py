@@ -68,3 +68,46 @@
 # # # Un jugador debe lanzar dos dados numerados de 1 a 6, y su puntaje es la suma de los valores obtenidos.
 # # # Un puntaje dado puede ser obtenido con varias combinaciones posibles. Por ejemplo, el puntaje 4 se logra con las siguientes tres combinaciones: 1+3, 2+2 y 3+1.
 # # # Escriba un programa que pregunte al usuario un puntaje, y muestre como resultado la cantidad de combinaciones de dados con las que se puede obtener ese puntaje.
+# puntaje = int(input("Ingrese el puntaje: "))
+# combinaciones = 0
+# for i in range(1,7,1):
+#     for j in range(1,7,1):
+#         if i+j == puntaje:
+#             combinaciones += 1
+# print("Hay",combinaciones,"combinaciones para obtener",puntaje)
+# # # Ejercicio 7 Histograma
+# # # Escriba un programa que pida al usuario que ingrese varios valores enteros, que pueden ser positivos o negativos. Cuando se ingrese un cero, el programa debe terminar y mostrar un gráfico de cuántos valores positivos y negativos fueron ingresados:
+# i = -1
+# cntPositivos = 0 #contador positivos
+# cntNegativos = 0 #contador negativos
+# print("Ingrese varios valores, termine con cero: ")
+# while i != 0: #ciclo contador de numeros ingresados
+#     i = int(input())
+#     if i < 0:
+#         cntNegativos += 1
+#     elif i > 0:
+#         cntPositivos += 1
+
+# print("Positivos:","*"*cntPositivos)
+# print("Negativos:","*"*cntNegativos)
+# # # Ejercicio 8 Mas corta y más larga
+# # # Desarrolle un programa que tenga la siguiente entrada:
+# # # primero, el usuario ingresa un número entero n, que indica cuántas palabras ingresará a continuación
+# # # después el usuario ingresa n palabras.
+# # # La salida del programa debe mostrar la palabra más larga y la más corta que fueron ingresadas por el usuario.
+# # # Recuerde que la función len entrega el largo de un string:
+#inicializo variables
+n = int(input("Cantidad de palabras: "))
+palabraLarga = ""
+palabraCorta = ""
+#Comienzo el ciclo que va a seleccionar la palabra mas larga y la mas corta
+for i in range(0,n,1):
+
+    palabra = input("Palabra {}: ".format(i+1))
+    if len(palabra) > len(palabraLarga) or palabraLarga == "":
+        palabraLarga = palabra
+    if len(palabra) < len(palabraCorta) or palabraCorta == "":
+        palabraCorta = palabra    
+#Muestro el resultado del ciclo
+print("La palabra mas larga es",palabraLarga)
+print("La palabra mas corta es",palabraCorta)
