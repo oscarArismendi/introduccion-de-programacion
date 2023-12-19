@@ -38,7 +38,7 @@
 # print(rol+"-"+str(digitoVerificador))   
 # # # Ejercicio 3 Numeros palindromos
 # # # 1)Escriba la función invertir_digitos(n) que reciba un número entero n y entregue como resultado el número n con los dígitos en el orden inverso:
-# # # 2)A continuación, escriba un programa que indique si el número ingresado es palíndromo o no, usando la función invertir_digitos:
+# # # 2)A continuación, escriba un programa que indique si el número ingresado es palíndromo o no, usando la función invertir_digitos:
 # def invertir_digitos(numero):#debe ingresar el numero como un string
 #     return numero[::-1]
 # n = int(input("Ingrese n: "))
@@ -60,20 +60,88 @@
 # # # Escriba un programa que pida al usuario ingresar el número n de días, y luego el precio del dólar para cada uno de los n días.
 # # # El programa debe entregar como salida cuál fue la mayor de las alzas de un día para el otro.
 # # # Si en ningún día el precio subió, la salida debe decir: No hubo alzas.
-def buscando_Alza():
-    alza = 0.0
-    anterior = 0.0
-    for i in range(1,n+1,1): # pido el valor del alza cada dia
-        x = float(input("Dia {:2}: ".format(i)))
-        if i != 1:
-            if x-anterior > alza: #buscamos el alza mayor
-                alza = x-anterior
-        anterior = x
-    return alza
-n = int(input("Cuantos dias? "))
+# def buscando_Alza():
+#     alza = 0.0
+#     anterior = 0.0
+#     for i in range(1,n+1,1): # pido el valor del alza cada dia
+#         x = float(input("Dia {:2}: ".format(i)))
+#         if i != 1:
+#             if x-anterior > alza: #buscamos el alza mayor
+#                 alza = x-anterior
+#         anterior = x
+#     return alza
+# n = int(input("Cuantos dias? "))
 
-alza = buscando_Alza()
-if alza == 0.0:
-    print("No hubo alzas.")
-else:
-    print("La mayor alza fue de {:.2f} pesos".format(alza))
+# alza = buscando_Alza()
+# if alza == 0.0:
+#     print("No hubo alzas.")
+# else:
+#     print("La mayor alza fue de {:.2f} pesos".format(alza))
+# # # Ejercicio 5 Maquina de alimentos
+# # # Una máquina de alimentos tiene productos de tres tipos A,B y C que valen respectivamente $270, $340 y $390. La máquina acepta y da de vuelto monedas de $10, $50 y $100.
+# # # Escriba un programa que pida al usuario elegir el producto y luego le pida ingresar las monedas hasta alcanzar el monto a pagar. Si el monto ingresado es mayor que el precio del producto, el programa debe entregar las monedas de vuelto, una por una.
+
+# def elegir_producto():
+#     producto = ""
+#     print("La maquina tiene los productos A, B y C")
+#     while(producto.upper() != "A" and producto.upper() != "B" and producto.upper() != "C"):
+#         producto = input("Elija producto: ")
+#     return producto.upper()
+# def monedas(producto):
+#     precio = 0
+#     if producto == "A":
+#         precio = 270
+#     elif producto == "B":
+#         precio = 340
+#     else:
+#         precio = 390
+#     print("Solo se aceptan monedas de $100, $50 o $10")
+#     print("Ingrese monedas: ")
+#     ingresado = 0
+#     while ingresado < precio: #pedimos el dinero
+#         x = int(input())
+#         if x != 100 and x != 50 and x != 10:
+#             print("Moneda no valida")
+#         else:
+#             ingresado += x
+            
+#     print("Su vuelto: ")
+#     while(ingresado > precio):
+#         diferencia = ingresado - precio
+#         if diferencia >= 100:
+#             print(100)
+#             ingresado -= 100
+#         elif diferencia >= 50:
+#             print(50)
+#             ingresado -= 50
+#         else:
+#             print(10)
+#             ingresado -= 10
+
+# producto = elegir_producto() #el usuario selecciona su producto
+# monedas(producto)#Se le pide el dinero y se le da su cambio de ser necesario
+# # # Ejercicio 6 promocion con descuento
+# # # El supermercado Pitón Market ha lanzado una promoción para todos sus clientes que posean la tarjeta Raw Input. La promoción consiste en aplicar un descuento por cada n productos que pasan por caja.
+# # # El primer descuento es de 20%, y se aplica sobre los primeros  n  productos ingresados. Luego, cada descuento es la mitad del anterior, y es aplicado sobre los siguientes  n  productos.
+# # # Por ejemplo, si  n  = 3 y la compra es de 11 productos, entonces los tres primeros tienen 20% de descuento, los tres siguientes 10%, los tres siguientes 5%, y los dos últimos no tienen descuento.
+# # # Escriba un programa que pida al usuario ingresar  n  y la cantidad de productos, y luego los precios de cada producto. Al final, el programa debe entregar el precio total, el descuento total y el precio final después de aplicar el descuento.
+# # # Si al aplicar el descuento el precio queda con decimales, redondee el valor hacia abajo.
+n =int(input("n: ")) # productos necesarios para el descuento 
+cntProductos = int(input("Cantidad productos: "))
+total = 0
+actual = 0
+descuento = 0
+porcentaje = 0.2
+for i in range(1,cntProductos+1,1):
+    x = int(input("Precio producto {}: ".format(i)))
+    actual += x
+    if i % n == 0:
+        total += actual
+        descuento += actual*porcentaje
+        porcentaje /= 2
+        actual = 0
+total += actual
+descuento = int(descuento)
+print("Total: {}".format(total))
+print("Descuento: {}".format(descuento))
+print("Por pagar: {}".format(total-descuento))
