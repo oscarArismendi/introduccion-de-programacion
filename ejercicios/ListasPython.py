@@ -154,7 +154,8 @@ def media_armonica(lista):
     n = len(lista) #cantidad de datos en la lista
     suma_reciprocos = 0.0
     for x in lista: #ciclo para sumar los reciprocos de la lista
-        if 
+        if x == 0:
+            return -1
         suma_reciprocos += 1/x
     return n/suma_reciprocos
 # print(media_armonica([6,1,4,8]))
