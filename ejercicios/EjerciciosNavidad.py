@@ -156,72 +156,179 @@
 # # #     3)En buscar sismos por ciudad si escribe el nombre de la ciudad mostrarle los sismos
 # # #     4)En el segundo espacio de la lista tener el promedio de la ciudad y mostrar la clasificacion en el informe de riesgo
 # # #     5)El salir no saca del programa, en otras palabras el bucle principal
-lista_ciudades = []
-estado_menu = 0
-n = 3 # cantidad por ciudad
-nombres_ciudades = []
-while(estado_menu != 5):
-    print("1. Registar ciudad")
-    print("2. Registar sismo")
-    print("3. Buscar sismo por ciudad")
-    print("4. Informe de riesgo")
-    print("5. Salir")
-    estado_menu = int(input(""))
-    if(estado_menu == 1):#Registro de ciudad
-        nombre = input("Ingrese el nombre de la ciudad: ")
-        lista_ciudades.append([nombre,0])#nombre y promedio
-        nombres_ciudades.append(nombre)
-        estado_menu = 0
-    elif (estado_menu == 2): #Registro sismo
-        nombre = input("Ingrese la ciudad del sismo: ")
-        # estado = any(nombre in ciudad for ciudad in lista_ciudades)
-        indice = 0
-        for ciudad in lista_ciudades:
-            if(ciudad[0] == nombre):
-                break
-            indice += 1
-        if(indice == len(lista_ciudades)):
-            print("La ciudad no se encuentra en la lista")
-        else:
-            contador_sismos = len(lista_ciudades[indice])-2
-            print(f"la ciudad debe tener {n} registros de sismos actualmente tiene {contador_sismos}")
-            while(contador_sismos < n):
-                sismo = float(input("Ingrese la magnitud del sismo: "))
-                lista_ciudades[indice].append(sismo)
-                lista_ciudades[indice][1] += sismo #promedio en la ciudad
-                contador_sismos += 1
-            print("Ya se ha completado el numero de registros necesarios en esta ciudad")
-        estado_menu = 0
-    elif (estado_menu == 3): # Buscar sismo por ciudad
-        nombre = input("Ingrese el nombre de la ciudad: ")
-        for ciudad in lista_ciudades:
-            if(ciudad[0] == nombre):
-                for i in range(len(ciudad)):
-                    if(i > 1):
-                        print(ciudad[i],end = " ")
-                break
-            indice += 1
-        if(indice == len(lista_ciudades)):
-            print("La ciudad no se encuentra en la lista")
-            estado_menu = 0
-            break
-        else:
-            print("")
-    elif (estado_menu == 4): #informe de riesgo
-        for ciudad in lista_ciudades:
-            cantidad = len(ciudad)-2
-            riesgo = 0.0
-            if(cantidad != 0):
-                riesgo = ciudad[1]/cantidad
-            else:
-                continue
-            print(f"{ciudad[0]} riesgo: ",end="")
-            if(riesgo < 2.6):
-                print("Amarillo (Sin riesgo)")
-            elif (riesgo >=2.6 and riesgo <= 4.5):
-                print("Naranja (Riesgo medio)")
-            else:
-                print("Rojo (Riesgo alto)")
-    
-        
+# lista_ciudades = []
+# estado_menu = 0
+# n = 3 # cantidad por ciudad
+# nombres_ciudades = []
+# while(estado_menu != 5):
+#     print("1. Registar ciudad")
+#     print("2. Registar sismo")
+#     print("3. Buscar sismo por ciudad")
+#     print("4. Informe de riesgo")
+#     print("5. Salir")
+#     estado_menu = int(input(""))
+#     if(estado_menu == 1):#Registro de ciudad
+#         nombre = input("Ingrese el nombre de la ciudad: ")
+#         lista_ciudades.append([nombre,0])#nombre y promedio
+#         nombres_ciudades.append(nombre)
+#         estado_menu = 0
+#     elif (estado_menu == 2): #Registro sismo
+#         nombre = input("Ingrese la ciudad del sismo: ")
+#         # estado = any(nombre in ciudad for ciudad in lista_ciudades)
+#         indice = 0
+#         for ciudad in lista_ciudades:
+#             if(ciudad[0] == nombre):
+#                 break
+#             indice += 1
+#         if(indice == len(lista_ciudades)):
+#             print("La ciudad no se encuentra en la lista")
+#         else:
+#             contador_sismos = len(lista_ciudades[indice])-2
+#             print(f"la ciudad debe tener {n} registros de sismos actualmente tiene {contador_sismos}")
+#             while(contador_sismos < n):
+#                 sismo = float(input("Ingrese la magnitud del sismo: "))
+#                 lista_ciudades[indice].append(sismo)
+#                 lista_ciudades[indice][1] += sismo #promedio en la ciudad
+#                 contador_sismos += 1
+#             print("Ya se ha completado el numero de registros necesarios en esta ciudad")
+#         estado_menu = 0
+#     elif (estado_menu == 3): # Buscar sismo por ciudad
+#         nombre = input("Ingrese el nombre de la ciudad: ")
+#         for ciudad in lista_ciudades:
+#             if(ciudad[0] == nombre):
+#                 for i in range(len(ciudad)):
+#                     if(i > 1):
+#                         print(ciudad[i],end = " ")
+#                 break
+#             indice += 1
+#         if(indice == len(lista_ciudades)):
+#             print("La ciudad no se encuentra en la lista")
+#             estado_menu = 0
+#             break
+#         else:
+#             print("")
+#     elif (estado_menu == 4): #informe de riesgo
+#         for ciudad in lista_ciudades:
+#             cantidad = len(ciudad)-2
+#             riesgo = 0.0
+#             if(cantidad != 0):
+#                 riesgo = ciudad[1]/cantidad
+#             else:
+#                 continue
+#             print(f"{ciudad[0]} riesgo: ",end="")
+#             if(riesgo < 2.6):
+#                 print("Amarillo (Sin riesgo)")
+#             elif (riesgo >=2.6 and riesgo <= 4.5):
+#                 print("Naranja (Riesgo medio)")
+#             else:
+#                 print("Rojo (Riesgo alto)")
+# # # 2) La alcaldía de Bucaramanga desea realizar un programa que le permita calcular el valor de CO2 producido
+# # # En las diferentes instalaciones gubernamentales de la ciudad. Tenga en cuenta las siguientes observaciones:
+# # # El programa debe permitir mostrar cual de las instalaciones tiene mayor producción de CO2.
+# # # Requerimientos: El programa debe contar con un menú principal que permita realizar todos los
+# # # Procesos solicitados.
+# # # 1. Registrar Dependencia
+# # # 2. Registrar consumo por dependencia : Tengan en cuenta que se debe registrar los valores
+# # # consumidos por los dispositivos en cada una de las oficinas.
+# # # 3. Ver CO2 producido
+# # # 4. Dependencia que produce mayor CO2
+# # # 5. Salir
+# # # pensamientos:
+# # #     1) Hacer un diccionario para las dependencias 
+# # #     2) Hacer el menu que va a ser un while 
+# # #     3) para registrar dependencia que ponga solo el nombre y agregarla al diccionario
+# # #     4) Para registrar un consuma hacer un menu que diga registrar dispositivo en el cual dira si es electrodomestico o transporte
+# # #     5) Sumatoria de todos los co2
+# # #     6) Mostrar el nombre de la dependencia que produce mayor CO2
+# # #     7) salir cuando estado_menu sea igual a 5
+# dependencias = {}
+# estado_menu = 0
+# while (estado_menu != 5):#menu principal
+#     print("1. Registrar Dependencia")
+#     print("2. Registrar consumo por dependencia")
+#     print("3. Ver CO2 producido")
+#     print("4. Dependencia que produce mayor CO2")
+#     print("5. Salir")
+#     estado_menu = int(input(""))
+#     if(estado_menu == 1):#registro de dependencia
+#         nombre = input("Ingrese el nombre de la dependencia: ")
+#         if(dependencias.get(nombre) != None):
+#             print("Ya esta registrada la dependencia")
+#         else:
+#             dependencias[nombre] = []
+#     elif (estado_menu == 2):#registro consumo de dependencia
+#         estado_registro = 0
+#         while(estado_registro != 2):
+#             print("1.Registrar un electrodomestico")
+#             print("2.Registrar un transporte")
+#             print("3.Volver al menu principal")
+#             opcion_usuario = int(input(""))
+#             if(opcion_usuario == 3):
+#                 break
+#             dependencia = ""
+#             while(dependencias.get(dependencia) == None):
+#                 dependencia = input("Ingrese el nombre de la dependencia donde hara el registro: ")
+#             if(opcion_usuario == 1):
+#                 nombre = input("Ingrese el nombre del electrodomestico: ")
+#                 tiempo = float(input("Ingrese el tiempo de uso en horas: "))
+#                 consumo = int(input("Ingrese los kwh consumidos por {}: ".format(nombre)))
+#                 consumo = float((consumo/1000)*0.3)
+#                 dependencias[dependencia].append([nombre,consumo*tiempo])#añade el nombre del electrodomestico y lo emetido en co2
+#             elif(opcion_usuario == 2):
+#                 nombre = input("Ingrese el nombre del transporte: ")
+#                 recorrido = float(input("Ingrese los kilometros recorridos: "))
+#                 dependencias[dependencia].append([nombre,recorrido*31.7])#añade el nombre del transporte y lo emetido en co2
+#             elif(opcion_usuario == 3):
+#                 estado_registro = 2
+#         estado_registro = 0
+#     elif(estado_menu == 3):#ver co2 producido
+#         total = 0.0
+#         for dependencia in dependencias:
+#             for datos in dependencias[dependencia]:
+#                 total += datos[1]#sumo lo emitdo en co2
+#         print(f"El total emitido en CO2 es: {total}")
+#     elif(estado_menu == 4):#la dependencia que produce mas CO2
+#         total = 0.0
+#         mayor = -1
+#         nombre = ""
+#         for dependencia in dependencias:
+            
+#             for datos in dependencias[dependencia]:
+#                 total += datos[1]#sumo lo emitdo en co2
+#             if(total > mayor):
+#                 mayor = total
+#                 nombre = dependencia
+#         print(f"El total emitido en CO2 es: {nombre}")
+# # # 3) En el contexto de la gestión de inventarios, se requiere desarrollar un programa en Python que permita
+# # # realizar el control detallado de productos en un negocio. Cada producto estará caracterizado por los siguientes
+# # # atributos:
+# # # •Código del producto.
+# # # •Nombre del producto.
+# # # •Valor de compra del producto.
+# # # •Valor de venta del producto.
+# # # •Stock mínimo permitido.
+# # # •Stock máximo permitido.
+# # # •Nombre del proveedor del producto.
+# # # El programa debe cumplir con las siguientes funcionalidades:
+# # # 1.Registro de Productos:
+# # # 1. El usuario podrá registrar nuevos productos proporcionando la siguiente información: código,
+# # # nombre, valor de compra, valor de venta, stock mínimo, stock máximo y nombre del
+# # # proveedor.
+# # # 2.Visualización de Productos:
+# # # 1. El programa deberá permitir la visualización de la lista de productos registrados, mostrando
+# # # todos los atributos de cada producto en un formato claro y legible.
+# # # 3.Actualización de Stock:
+# # # 1. Se debe implementar la posibilidad de actualizar el stock de un producto específico. El
+# # # usuario ingresará el código del producto y la cantidad que desea agregar o restar al stock.
+# # # 4. Informe de Productos Críticos:
+# # # 1. El programa deberá generar un informe que muestre los productos cuyo stock
+# # # se encuentra por debajo del límite mínimo establecido.
+# # # 5. Cálculo de Ganancia Potencial:
+# # # 2. Implementar una función que calcule la ganancia potencial total considerando
+# # # la diferencia entre el valor de venta y el valor de compra de cada producto,
+# # # multiplicada por la cantidad en stock.
+# # # Pensamientos:
+# # #     1) hacer un diccionario de productos
+# # #     2) En el registro añadir al diccionario como una lista de todos los valores
+# # #     3) Mostrar la key  y todos los otros valores para el 
 
