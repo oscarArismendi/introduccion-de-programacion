@@ -330,5 +330,9 @@
 # # # Pensamientos:
 # # #     1) hacer un diccionario de productos
 # # #     2) En el registro añadir al diccionario como una lista de todos los valores
-# # #     3) Mostrar la key  y todos los otros valores para el 
+# # #     3) Imprimir nombre, valor de compra, valor de venta, stock mínimo, stock máximo y nombre de proveedor.
+# # #     Despues imprimir la key y los valores de la key
+# # #     4) ingresar el codigo del producto y cambiar el stock por el que ponga el usuario
+# # #     5)Mostrar keys de productos que esten por debajo de lo establecido
+# # #     6)Sumar todas las ganancias
 
