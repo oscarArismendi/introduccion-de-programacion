@@ -1,3 +1,23 @@
+#1. Registro de campers : El programa debe permitir a las personas encargadas de procesar las #inscripciones
+#a el programa; la información que se tiene por cada camper es la siguiente : nro de identificación, #nombre,
+#Apellidos, dirección, acudiente, teléfonos de contacto(Nro celular y nro fijo),estado.
+#1) campers = []
+#   ruta = ["Ruta NodeJS", "Ruta Java", "Ruta NetCore"] 
+# En python quiero crear funcion que se añada a campers el diccionario 
+    # {
+        # identificacion:input
+        # nombre: input
+        # apellido: input
+        # direcion:input 
+        # acudiente:input
+        # telefono:input
+        # estado: input
+        #ruta: input(""Ruta NodeJS", "Ruta Java", "Ruta NetCore"") # la ruta puede ser aleatorio ruta[random(0,2)]
+    # }
+    #el diccionario toca añadirlo a campers
+    # campers.append(diccionario)
+#pasar json  a la lista campers 
+#2)
 # nro de identificación, nombre,Apellidos, dirección, acudiente, teléfonos de contacto(Nro celular y nro fijo),estado.
 import json
 import random
