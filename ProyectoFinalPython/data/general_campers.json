@@ -1,0 +1,398 @@
+[
+    {
+        "id_number": 1,
+        "first_name": "Arthuro",
+        "second_name": "Nogera Arismendi",
+        "address": "Floridablanca",
+        "emergency_contact": "Maria",
+        "telefonos": [
+            "3194611495",
+            "6076837427"
+        ],
+        "state": "reprobate"
+    },
+    {
+        "id_number": 2,
+        "first_name": "Ana",
+        "second_name": "Vasquez Aceros",
+        "address": "Pidecuentas",
+        "emergency_contact": "Teresa",
+        "telefonos": [
+            "3194611495",
+            "6076837427"
+        ],
+        "state": "reprobate"
+    },
+    {
+        "id_number": 3,
+        "first_name": "Marta",
+        "second_name": "Vasquez Villalobo",
+        "address": "Pidecuentas",
+        "emergency_contact": "Steven",
+        "telefonos": [
+            "3194611495",
+            "6076837427"
+        ],
+        "state": "approved"
+    },
+    {
+        "id_number": 4,
+        "first_name": "Arthuro",
+        "second_name": "Villalobo Vega",
+        "address": "Centro",
+        "emergency_contact": "Wilson",
+        "telefonos": [
+            "3194611495",
+            "6076837427"
+        ],
+        "state": "reprobate"
+    },
+    {
+        "id_number": 5,
+        "first_name": "Marta",
+        "second_name": "Vega Arismendi",
+        "address": "Cabecera",
+        "emergency_contact": "Steven",
+        "telefonos": [
+            "3194611495",
+            "6076837427"
+        ],
+        "state": "reprobate"
+    },
+    {
+        "id_number": 6,
+        "first_name": "Arthuro",
+        "second_name": "Arismendi Vega",
+        "address": "Centro",
+        "emergency_contact": "Teresa",
+        "telefonos": [
+            "3194611495",
+            "6076837427"
+        ],
+        "state": "reprobate"
+    },
+    {
+        "id_number": 7,
+        "first_name": "Maria",
+        "second_name": "Arismendi Arismendi",
+        "address": "Bosque",
+        "emergency_contact": "Fredy",
+        "telefonos": [
+            "3194611495",
+            "6076837427"
+        ],
+        "state": "reprobate"
+    },
+    {
+        "id_number": 8,
+        "first_name": "Carlos",
+        "second_name": "Arismendi Aceros",
+        "address": "Cabecera",
+        "emergency_contact": "Sandra",
+        "telefonos": [
+            "3194611495",
+            "6076837427"
+        ],
+        "state": "enrolled"
+    },
+    {
+        "id_number": 9,
+        "first_name": "Maria",
+        "second_name": "Vega Nogera",
+        "address": "Cabecera",
+        "emergency_contact": "Wilson",
+        "telefonos": [
+            "3194611495",
+            "6076837427"
+        ],
+        "state": "approved"
+    },
+    {
+        "id_number": 10,
+        "first_name": "Carlos",
+        "second_name": "Vega Arismendi",
+        "address": "Centro",
+        "emergency_contact": "Teresa",
+        "telefonos": [
+            "3194611495",
+            "6076837427"
+        ],
+        "state": "reprobate"
+    },
+    {
+        "id_number": 11,
+        "first_name": "Carlos",
+        "second_name": "Villalobo Villalobo",
+        "address": "Bosque",
+        "emergency_contact": "Teresa",
+        "telefonos": [
+            "3194611495",
+            "6076837427"
+        ],
+        "state": "reprobate"
+    },
+    {
+        "id_number": 12,
+        "first_name": "Luis",
+        "second_name": "Villalobo Vasquez",
+        "address": "Cabecera",
+        "emergency_contact": "Sandra",
+        "telefonos": [
+            "3194611495",
+            "6076837427"
+        ],
+        "state": "reprobate"
+    },
+    {
+        "id_number": 13,
+        "first_name": "Maria",
+        "second_name": "Aceros Vasquez",
+        "address": "Centro",
+        "emergency_contact": "Steven",
+        "telefonos": [
+            "3194611495",
+            "6076837427"
+        ],
+        "state": "approved"
+    },
+    {
+        "id_number": 14,
+        "first_name": "Maria",
+        "second_name": "Arismendi Arismendi",
+        "address": "Centro",
+        "emergency_contact": "Wilson",
+        "telefonos": [
+            "3194611495",
+            "6076837427"
+        ],
+        "state": "reprobate"
+    },
+    {
+        "id_number": 15,
+        "first_name": "Marta",
+        "second_name": "Vega Villalobo",
+        "address": "Real de minas",
+        "emergency_contact": "Fredy",
+        "telefonos": [
+            "3194611495",
+            "6076837427"
+        ],
+        "state": "approved"
+    },
+    {
+        "id_number": 16,
+        "first_name": "Maria",
+        "second_name": "Vasquez Arismendi",
+        "address": "Bosque",
+        "emergency_contact": "Maria",
+        "telefonos": [
+            "3194611495",
+            "6076837427"
+        ],
+        "state": "approved"
+    },
+    {
+        "id_number": 17,
+        "first_name": "Marta",
+        "second_name": "Vega Vega",
+        "address": "Floridablanca",
+        "emergency_contact": "Sandra",
+        "telefonos": [
+            "3194611495",
+            "6076837427"
+        ],
+        "state": "enrolled"
+    },
+    {
+        "id_number": 18,
+        "first_name": "Maria",
+        "second_name": "Nogera Aceros",
+        "address": "Pidecuentas",
+        "emergency_contact": "Teresa",
+        "telefonos": [
+            "3194611495",
+            "6076837427"
+        ],
+        "state": "approved"
+    },
+    {
+        "id_number": 19,
+        "first_name": "Maria",
+        "second_name": "Vega Vasquez",
+        "address": "Centro",
+        "emergency_contact": "Teresa",
+        "telefonos": [
+            "3194611495",
+            "6076837427"
+        ],
+        "state": "reprobate"
+    },
+    {
+        "id_number": 20,
+        "first_name": "Maria",
+        "second_name": "Nogera Nogera",
+        "address": "Pidecuentas",
+        "emergency_contact": "Steven",
+        "telefonos": [
+            "3194611495",
+            "6076837427"
+        ],
+        "state": "approved"
+    },
+    {
+        "id_number": 21,
+        "first_name": "Marta",
+        "second_name": "Vega Nogera",
+        "address": "Centro",
+        "emergency_contact": "Wilson",
+        "telefonos": [
+            "3194611495",
+            "6076837427"
+        ],
+        "state": "approved"
+    },
+    {
+        "id_number": 22,
+        "first_name": "Maria",
+        "second_name": "Vasquez Villalobo",
+        "address": "Centro",
+        "emergency_contact": "Sandra",
+        "telefonos": [
+            "3194611495",
+            "6076837427"
+        ],
+        "state": "reprobate"
+    },
+    {
+        "id_number": 23,
+        "first_name": "Luis",
+        "second_name": "Vega Nogera",
+        "address": "Floridablanca",
+        "emergency_contact": "Fredy",
+        "telefonos": [
+            "3194611495",
+            "6076837427"
+        ],
+        "state": "reprobate"
+    },
+    {
+        "id_number": 24,
+        "first_name": "Maria",
+        "second_name": "Aceros Villalobo",
+        "address": "Pidecuentas",
+        "emergency_contact": "Teresa",
+        "telefonos": [
+            "3194611495",
+            "6076837427"
+        ],
+        "state": "approved"
+    },
+    {
+        "id_number": 25,
+        "first_name": "Arthuro",
+        "second_name": "Vega Aceros",
+        "address": "Bosque",
+        "emergency_contact": "Sandra",
+        "telefonos": [
+            "3194611495",
+            "6076837427"
+        ],
+        "state": "reprobate"
+    },
+    {
+        "id_number": 26,
+        "first_name": "Luis",
+        "second_name": "Vega Villalobo",
+        "address": "Floridablanca",
+        "emergency_contact": "Sandra",
+        "telefonos": [
+            "3194611495",
+            "6076837427"
+        ],
+        "state": "enrolled"
+    },
+    {
+        "id_number": 27,
+        "first_name": "Arthuro",
+        "second_name": "Nogera Vega",
+        "address": "Centro",
+        "emergency_contact": "Fredy",
+        "telefonos": [
+            "3194611495",
+            "6076837427"
+        ],
+        "state": "enrolled"
+    },
+    {
+        "id_number": 28,
+        "first_name": "Luis",
+        "second_name": "Vega Nogera",
+        "address": "Centro",
+        "emergency_contact": "Maria",
+        "telefonos": [
+            "3194611495",
+            "6076837427"
+        ],
+        "state": "reprobate"
+    },
+    {
+        "id_number": 29,
+        "first_name": "Ana",
+        "second_name": "Arismendi Villalobo",
+        "address": "Pidecuentas",
+        "emergency_contact": "Wilson",
+        "telefonos": [
+            "3194611495",
+            "6076837427"
+        ],
+        "state": "enrolled"
+    },
+    {
+        "id_number": 30,
+        "first_name": "Carlos",
+        "second_name": "Vasquez Vega",
+        "address": "Floridablanca",
+        "emergency_contact": "Maria",
+        "telefonos": [
+            "3194611495",
+            "6076837427"
+        ],
+        "state": "reprobate"
+    },
+    {
+        "id_number": 31,
+        "first_name": "Ana",
+        "second_name": "Arismendi Arismendi",
+        "address": "Floridablanca",
+        "emergency_contact": "Wilson",
+        "telefonos": [
+            "3194611495",
+            "6076837427"
+        ],
+        "state": "enrolled"
+    },
+    {
+        "id_number": 32,
+        "first_name": "Marta",
+        "second_name": "Arismendi Nogera",
+        "address": "Floridablanca",
+        "emergency_contact": "Maria",
+        "telefonos": [
+            "3194611495",
+            "6076837427"
+        ],
+        "state": "enrolled"
+    },
+    {
+        "id_number": 33,
+        "first_name": "Ana",
+        "second_name": "Villalobo Arismendi",
+        "address": "Pidecuentas",
+        "emergency_contact": "Teresa",
+        "telefonos": [
+            "3194611495",
+            "6076837427"
+        ],
+        "state": "reprobate"
+    }
+]
