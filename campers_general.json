@@ -1,0 +1,398 @@
+[
+    {
+        "nro_de_identificacion": 1,
+        "nombre": "Carlos",
+        "Apellidos": "Villalobo",
+        "direccion": "Centro",
+        "acudientes": "Sandra",
+        "telefonos": [
+            "3190686675",
+            "6076958210"
+        ],
+        "estado": "aprobado"
+    },
+    {
+        "nro_de_identificacion": 2,
+        "nombre": "Carlos",
+        "Apellidos": "Vega",
+        "direccion": "Centro",
+        "acudientes": "Sandra",
+        "telefonos": [
+            "3190686675",
+            "6076958210"
+        ],
+        "estado": "reprobado"
+    },
+    {
+        "nro_de_identificacion": 3,
+        "nombre": "Luis",
+        "Apellidos": "Arismendi",
+        "direccion": "Pidecuentas",
+        "acudientes": "Teresa",
+        "telefonos": [
+            "3190686675",
+            "6076958210"
+        ],
+        "estado": "aprobado"
+    },
+    {
+        "nro_de_identificacion": 4,
+        "nombre": "Carlos",
+        "Apellidos": "Vega",
+        "direccion": "Centro",
+        "acudientes": "Teresa",
+        "telefonos": [
+            "3190686675",
+            "6076958210"
+        ],
+        "estado": "reprobado"
+    },
+    {
+        "nro_de_identificacion": 5,
+        "nombre": "Arthuro",
+        "Apellidos": "Villalobo",
+        "direccion": "Bosque",
+        "acudientes": "Teresa",
+        "telefonos": [
+            "3190686675",
+            "6076958210"
+        ],
+        "estado": "inscrito"
+    },
+    {
+        "nro_de_identificacion": 6,
+        "nombre": "Arthuro",
+        "Apellidos": "Villalobo",
+        "direccion": "Bosque",
+        "acudientes": "Maria",
+        "telefonos": [
+            "3190686675",
+            "6076958210"
+        ],
+        "estado": "aprobado"
+    },
+    {
+        "nro_de_identificacion": 7,
+        "nombre": "Arthuro",
+        "Apellidos": "Villalobo",
+        "direccion": "Centro",
+        "acudientes": "Teresa",
+        "telefonos": [
+            "3190686675",
+            "6076958210"
+        ],
+        "estado": "aprobado"
+    },
+    {
+        "nro_de_identificacion": 8,
+        "nombre": "Arthuro",
+        "Apellidos": "Villalobo",
+        "direccion": "Pidecuentas",
+        "acudientes": "Maria",
+        "telefonos": [
+            "3190686675",
+            "6076958210"
+        ],
+        "estado": "inscrito"
+    },
+    {
+        "nro_de_identificacion": 9,
+        "nombre": "Luis",
+        "Apellidos": "Villalobo",
+        "direccion": "Pidecuentas",
+        "acudientes": "Teresa",
+        "telefonos": [
+            "3190686675",
+            "6076958210"
+        ],
+        "estado": "reprobado"
+    },
+    {
+        "nro_de_identificacion": 10,
+        "nombre": "Arthuro",
+        "Apellidos": "Villalobo",
+        "direccion": "Centro",
+        "acudientes": "Maria",
+        "telefonos": [
+            "3190686675",
+            "6076958210"
+        ],
+        "estado": "reprobado"
+    },
+    {
+        "nro_de_identificacion": 11,
+        "nombre": "Luis",
+        "Apellidos": "Vega",
+        "direccion": "Bosque",
+        "acudientes": "Sandra",
+        "telefonos": [
+            "3190686675",
+            "6076958210"
+        ],
+        "estado": "inscrito"
+    },
+    {
+        "nro_de_identificacion": 12,
+        "nombre": "Carlos",
+        "Apellidos": "Arismendi",
+        "direccion": "Centro",
+        "acudientes": "Sandra",
+        "telefonos": [
+            "3190686675",
+            "6076958210"
+        ],
+        "estado": "reprobado"
+    },
+    {
+        "nro_de_identificacion": 13,
+        "nombre": "Carlos",
+        "Apellidos": "Vega",
+        "direccion": "Bosque",
+        "acudientes": "Maria",
+        "telefonos": [
+            "3190686675",
+            "6076958210"
+        ],
+        "estado": "aprobado"
+    },
+    {
+        "nro_de_identificacion": 14,
+        "nombre": "Carlos",
+        "Apellidos": "Vega",
+        "direccion": "Bosque",
+        "acudientes": "Sandra",
+        "telefonos": [
+            "3190686675",
+            "6076958210"
+        ],
+        "estado": "aprobado"
+    },
+    {
+        "nro_de_identificacion": 15,
+        "nombre": "Luis",
+        "Apellidos": "Vega",
+        "direccion": "Bosque",
+        "acudientes": "Sandra",
+        "telefonos": [
+            "3190686675",
+            "6076958210"
+        ],
+        "estado": "inscrito"
+    },
+    {
+        "nro_de_identificacion": 16,
+        "nombre": "Luis",
+        "Apellidos": "Vega",
+        "direccion": "Pidecuentas",
+        "acudientes": "Teresa",
+        "telefonos": [
+            "3190686675",
+            "6076958210"
+        ],
+        "estado": "aprobado"
+    },
+    {
+        "nro_de_identificacion": 17,
+        "nombre": "Arthuro",
+        "Apellidos": "Villalobo",
+        "direccion": "Pidecuentas",
+        "acudientes": "Teresa",
+        "telefonos": [
+            "3190686675",
+            "6076958210"
+        ],
+        "estado": "aprobado"
+    },
+    {
+        "nro_de_identificacion": 18,
+        "nombre": "Carlos",
+        "Apellidos": "Arismendi",
+        "direccion": "Centro",
+        "acudientes": "Sandra",
+        "telefonos": [
+            "3190686675",
+            "6076958210"
+        ],
+        "estado": "reprobado"
+    },
+    {
+        "nro_de_identificacion": 19,
+        "nombre": "Luis",
+        "Apellidos": "Vega",
+        "direccion": "Bosque",
+        "acudientes": "Maria",
+        "telefonos": [
+            "3190686675",
+            "6076958210"
+        ],
+        "estado": "reprobado"
+    },
+    {
+        "nro_de_identificacion": 20,
+        "nombre": "Luis",
+        "Apellidos": "Villalobo",
+        "direccion": "Pidecuentas",
+        "acudientes": "Maria",
+        "telefonos": [
+            "3190686675",
+            "6076958210"
+        ],
+        "estado": "reprobado"
+    },
+    {
+        "nro_de_identificacion": 21,
+        "nombre": "Carlos",
+        "Apellidos": "Arismendi",
+        "direccion": "Pidecuentas",
+        "acudientes": "Maria",
+        "telefonos": [
+            "3190686675",
+            "6076958210"
+        ],
+        "estado": "aprobado"
+    },
+    {
+        "nro_de_identificacion": 22,
+        "nombre": "Luis",
+        "Apellidos": "Villalobo",
+        "direccion": "Pidecuentas",
+        "acudientes": "Sandra",
+        "telefonos": [
+            "3190686675",
+            "6076958210"
+        ],
+        "estado": "inscrito"
+    },
+    {
+        "nro_de_identificacion": 23,
+        "nombre": "Carlos",
+        "Apellidos": "Arismendi",
+        "direccion": "Centro",
+        "acudientes": "Sandra",
+        "telefonos": [
+            "3190686675",
+            "6076958210"
+        ],
+        "estado": "inscrito"
+    },
+    {
+        "nro_de_identificacion": 24,
+        "nombre": "Carlos",
+        "Apellidos": "Villalobo",
+        "direccion": "Bosque",
+        "acudientes": "Sandra",
+        "telefonos": [
+            "3190686675",
+            "6076958210"
+        ],
+        "estado": "aprobado"
+    },
+    {
+        "nro_de_identificacion": 25,
+        "nombre": "Arthuro",
+        "Apellidos": "Villalobo",
+        "direccion": "Bosque",
+        "acudientes": "Teresa",
+        "telefonos": [
+            "3190686675",
+            "6076958210"
+        ],
+        "estado": "reprobado"
+    },
+    {
+        "nro_de_identificacion": 26,
+        "nombre": "Luis",
+        "Apellidos": "Arismendi",
+        "direccion": "Bosque",
+        "acudientes": "Maria",
+        "telefonos": [
+            "3190686675",
+            "6076958210"
+        ],
+        "estado": "inscrito"
+    },
+    {
+        "nro_de_identificacion": 27,
+        "nombre": "Arthuro",
+        "Apellidos": "Villalobo",
+        "direccion": "Centro",
+        "acudientes": "Teresa",
+        "telefonos": [
+            "3190686675",
+            "6076958210"
+        ],
+        "estado": "aprobado"
+    },
+    {
+        "nro_de_identificacion": 28,
+        "nombre": "Luis",
+        "Apellidos": "Arismendi",
+        "direccion": "Pidecuentas",
+        "acudientes": "Maria",
+        "telefonos": [
+            "3190686675",
+            "6076958210"
+        ],
+        "estado": "aprobado"
+    },
+    {
+        "nro_de_identificacion": 29,
+        "nombre": "Arthuro",
+        "Apellidos": "Vega",
+        "direccion": "Pidecuentas",
+        "acudientes": "Sandra",
+        "telefonos": [
+            "3190686675",
+            "6076958210"
+        ],
+        "estado": "inscrito"
+    },
+    {
+        "nro_de_identificacion": 30,
+        "nombre": "Arthuro",
+        "Apellidos": "Villalobo",
+        "direccion": "Pidecuentas",
+        "acudientes": "Teresa",
+        "telefonos": [
+            "3190686675",
+            "6076958210"
+        ],
+        "estado": "inscrito"
+    },
+    {
+        "nro_de_identificacion": 31,
+        "nombre": "Carlos",
+        "Apellidos": "Villalobo",
+        "direccion": "Centro",
+        "acudientes": "Sandra",
+        "telefonos": [
+            "3190686675",
+            "6076958210"
+        ],
+        "estado": "reprobado"
+    },
+    {
+        "nro_de_identificacion": 32,
+        "nombre": "Luis",
+        "Apellidos": "Vega",
+        "direccion": "Pidecuentas",
+        "acudientes": "Sandra",
+        "telefonos": [
+            "3190686675",
+            "6076958210"
+        ],
+        "estado": "inscrito"
+    },
+    {
+        "nro_de_identificacion": 33,
+        "nombre": "Carlos",
+        "Apellidos": "Vega",
+        "direccion": "Centro",
+        "acudientes": "Teresa",
+        "telefonos": [
+            "3190686675",
+            "6076958210"
+        ],
+        "estado": "inscrito"
+    }
+]
