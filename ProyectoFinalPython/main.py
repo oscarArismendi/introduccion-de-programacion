@@ -1,4 +1,5 @@
 from commons.utils import *
+from commons.menus import *
 import os
 import json
 # # # generate the inicial list of students
@@ -23,5 +24,26 @@ with open(file_path, "w") as file:
 # file.close()
 
 # # # menu principal
-estado_menu = -1
+
+while (True):
+    print("1. Campers")
+    print("2. Trainers")
+    print("3. Tuition")
+    print("4. Classrooms")
+    print("5. Reports")
+    print("6. Exit")  
+    op = main_menu()
+    if op == 1:
+        campers_menu()
+    if op == 2:
+        trainers_menu() 
+    if op == 3:
+        tuition_menu()
+    if op == 4:
+        classroom_menu()
+    if op == 5:
+        report_menu()
+    if op == 6:
+        print("Have a good day!")
+        break
 

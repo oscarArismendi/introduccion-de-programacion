@@ -22,10 +22,10 @@ def student_generator():
         obje = {
             "id_number":i+1,
             "first_name" : names[random.randint(0,5)],
-            "second_name" : surnames[random.randint(0,5)]+ " " +surnames[random.randint(0,5)],
+            "last_name" : surnames[random.randint(0,5)]+ " " +surnames[random.randint(0,5)],
             "address" : addresses[random.randint(0,5)],
             "emergency_contact" : emergency_contacts[random.randint(0,5)],
-            "telefonos" :[cellphone,landline],
+            "numbers" :[cellphone,landline],
             "state" : states[random.randint(0,2)]
         }
         campers.append(obje)
