@@ -20,7 +20,7 @@ def student_generator():
     states = ["enrolled","approved","reprobate"]
     for i in range(0,33,1):#(33) 0 1 2 --- 32 
         obje = {
-            "id_number":i+1,
+            "id_number":str(i+1),
             "first_name" : names[random.randint(0,5)],
             "last_name" : surnames[random.randint(0,5)]+ " " +surnames[random.randint(0,5)],
             "address" : addresses[random.randint(0,5)],

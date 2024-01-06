@@ -22,8 +22,19 @@ def new_camper():
 
 def showCampers(file_path):
     campers = load_json(file_path)
-    print(campers)
+    for camper in campers:
+        for data in camper:
+            spaces_len = 44-len(data)
+            if(isinstance(camper[data],str)):
+                spaces_len -= len(camper[data])
+            else:
+                for value in camper[data]:
+                    spaces_len -= len(value)
+                spaces_len -=8
 
+            print(data,":",camper[data],(" "*spaces_len),"|")
+        print("-"*50)
+    
 def campers_modifications():
     print("Must do")
 
