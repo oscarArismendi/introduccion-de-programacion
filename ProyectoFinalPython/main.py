@@ -1,5 +1,6 @@
 from commons.utils import *
 from commons.menus import *
+from business.campers import *
 import os
 import json
 # # # generate the inicial list of students
@@ -34,16 +35,26 @@ while (True):
     print("6. Exit")  
     op = main_menu()
     if op == 1:
-        campers_menu()
-    if op == 2:
+        while(True):
+            op = campers_menu()
+            if(op == 1):
+                new_camper()
+            elif(op == 2):
+                showCampers(file_path)
+            elif(op == 3):
+                print("3. Campers Modification")
+            elif(op == 4):
+                print("4. Exit")
+                break
+    elif op == 2:
         trainers_menu() 
-    if op == 3:
+    elif op == 3:
         tuition_menu()
-    if op == 4:
+    elif op == 4:
         classroom_menu()
-    if op == 5:
+    elif op == 5:
         report_menu()
-    if op == 6:
+    elif op == 6:
         print("Have a good day!")
         break
 

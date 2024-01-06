@@ -13,7 +13,6 @@ def main_menu():
     return op
 
 def campers_menu():
-    clean_screen()
     print("----------- Campers Menu-----------")
     print("1. New camper")
     print("2. Show Campers")
@@ -24,7 +23,6 @@ def campers_menu():
     
     
 def trainers_menu():
-    clean_screen()
     print("----------- Trainers Menu-----------")
     print("1. New Trainer")
     print("2. Search Trainer")
@@ -34,7 +32,6 @@ def trainers_menu():
     return op
 
 def tuition_menu():
-    clean_screen()
     print("----------- Tuition Menu-----------")
     print("1. New Tuition")
     print("2. Search Tuition")
@@ -44,7 +41,6 @@ def tuition_menu():
     return op
 
 def classroom_menu():
-    clean_screen()
     print("----------- Classroom Menu-----------")
     print("1. New Classroom")
     print("2. Search Classroom")
@@ -54,7 +50,6 @@ def classroom_menu():
     return op
 
 def report_menu():
-    clean_screen()
     print("----------- Report Menu -----------")
     print("1. Show campers enrolled")
     print("2. Show campers approved")

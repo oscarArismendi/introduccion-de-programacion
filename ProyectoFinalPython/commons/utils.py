@@ -31,6 +31,17 @@ def student_generator():
         campers.append(obje)
     return campers
 
+def load_json(file_path):
+    try:
+      with open(file_path, 'r') as archivo_json:        
+        campers = json.load(archivo_json)
+        # print("You have load the list of campers")
+        return campers
+    except Exception as e:
+      print(f"Error to load: {e}")
+
+
+# # #functions to load objects from json 
 
 # # # general functions
 

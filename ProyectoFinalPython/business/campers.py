@@ -1,3 +1,4 @@
+from commons.utils import * 
 def new_camper():
     id_number: input("Type the id number")
     first_name = input("Type the first name")
@@ -18,5 +19,12 @@ def new_camper():
         "state" : state    
               }
     return camper
+
+def showCampers(file_path):
+    campers = load_json(file_path)
+    print(campers)
+
+def campers_modifications():
+    print("Must do")
 
 
