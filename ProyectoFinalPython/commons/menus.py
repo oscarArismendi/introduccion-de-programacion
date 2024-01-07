@@ -1,8 +1,8 @@
-from commons.utils import option_validation,clean_screen
+from commons.utils import option_validation,clean_screen,print_slash
 
 def main_menu():
     clean_screen()
-    print("----------- Main Menu-----------")
+    print_slash("Main Menu","|")
     print("1. Campers")
     print("2. Trainers")
     print("3. Tuition")
@@ -13,7 +13,7 @@ def main_menu():
     return op
 
 def campers_menu():
-    print("----------- Campers Menu-----------")
+    print_slash("Campers Menu","|")
     print("1. New camper")
     print("2. Show Campers")
     print("3. Campers Modification")
@@ -23,7 +23,7 @@ def campers_menu():
     
     
 def trainers_menu():
-    print("----------- Trainers Menu-----------")
+    print_slash("Trainers Menu","|")
     print("1. New Trainer")
     print("2. Search Trainer")
     print("3. Trainer Modification")
@@ -32,7 +32,7 @@ def trainers_menu():
     return op
 
 def tuition_menu():
-    print("----------- Tuition Menu-----------")
+    print_slash("Tuition Menu","|")
     print("1. New Tuition")
     print("2. Search Tuition")
     print("3. Tuition Modification")
@@ -41,7 +41,7 @@ def tuition_menu():
     return op
 
 def classroom_menu():
-    print("----------- Classroom Menu-----------")
+    print_slash("Classroom Menu")
     print("1. New Classroom")
     print("2. Search Classroom")
     print("3. Modification Classroom")
@@ -50,7 +50,7 @@ def classroom_menu():
     return op
 
 def report_menu():
-    print("----------- Report Menu -----------")
+    print_slash("Report Menu","|")
     print("1. Show campers enrolled")
     print("2. Show campers approved")
     print("3. Show trainers")

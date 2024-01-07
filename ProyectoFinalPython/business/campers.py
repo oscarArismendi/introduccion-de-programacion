@@ -23,6 +23,7 @@ def new_camper():
 def showCampers(file_path):
     campers = load_json(file_path)
     for camper in campers:
+        print(("-"*49)+"|")
         for data in camper:
             spaces_len = 44-len(data)
             if(isinstance(camper[data],str)):
@@ -31,9 +32,10 @@ def showCampers(file_path):
                 for value in camper[data]:
                     spaces_len -= len(value)
                 spaces_len -=8
-
             print(data,":",camper[data],(" "*spaces_len),"|")
-        print("-"*50)
+    text = ""
+    while (text == ""):
+        text = input("Press any key to continue to campers menu:")
     
 def campers_modifications():
     print("Must do")
