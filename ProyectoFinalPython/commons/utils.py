@@ -60,7 +60,7 @@ def option_validation(statement,lower,upper):
         except ValueError:
             print("Please, type a valid number.")
 
-def print_slash(text,last_character):
+def print_(left_part,text,right_part,last_character):
     left = int((50-len(text))/2)
     right = 50 - left - len(text)-1
-    print(("-"*left)+text+("-"*right)+last_character)
+    print((left_part*left)+text+(right_part*right)+last_character)
