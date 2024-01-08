@@ -1,0 +1,20 @@
+[
+    {
+        "name":"apolo",
+        "trainer_id":"101",
+        "campers_id":[],
+        "route":"Java"
+    },
+    {
+        "name":"artemis",
+        "trainer_id":"102",
+        "campers_id":[],
+        "route":"NodeJS"
+    },
+    {
+        "name":"sputnik",
+        "trainer_id":"103",
+        "campers_id":[],
+        "route":"NetCore"
+    }
+]

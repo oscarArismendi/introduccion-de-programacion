@@ -1,12 +1,13 @@
 from commons.utils import * 
-def new_camper():
-    id_number: input("Type the id number")
-    first_name = input("Type the first name")
-    last_name = input("Type the last name")
-    address = input("Type the address")
-    emergency_contact = input("Type the emergency contact")
-    cellphone = input("Type the cellphone")
-    landline = input("Type the landline")
+from commons.menus import *
+def new_camper(file_path):
+    id_number = input("Type the id number: ")
+    first_name = input("Type the first name: ")
+    last_name = input("Type the last name: ")
+    address = input("Type the address: ")
+    emergency_contact = input("Type the emergency contact: ")
+    cellphone = input("Type the cellphone: ")
+    landline = input("Type the landline: ")
     state = "enrolled"
 
     camper = {
@@ -18,9 +19,15 @@ def new_camper():
         "numbers" :[cellphone,landline],
         "state" : state    
               }
-    return camper
+    campers = load_json(file_path)
+    for data in campers:
+        if(data["id_number"] == camper[id]):
+            input("This person is already in the list\n Press enter to continue:")
+            return
+    campers.append(camper)
+    save_json(campers,file_path)
 
-def showCampers(file_path):
+def show_Campers(file_path):
     campers = load_json(file_path)
     for camper in campers:
         print(("-"*49)+"|")
@@ -33,11 +40,29 @@ def showCampers(file_path):
                     spaces_len -= len(value)
                 spaces_len -=8
             print(data,":",camper[data],(" "*spaces_len),"|")
-    text = ""
-    while (text == ""):
-        text = input("Press any key to continue to campers menu:")
     
-def campers_modifications():
-    print("Must do")
-
+    stop()
+    
+def campers_modifications(file_path):
+    id = input("Type the id number: ")
+    campers = load_json(file_path)
+    camper = search_for_keys(campers,"id_number",id)
+    if camper == []:
+        op = yes_or_no_menu("The id is not in the data base\nWant to try another id?")
+        if(op == 1):
+            clean_screen()
+            campers_modifications(file_path)
+    else:
+        camper = camper[0]
+        if(camper["state"] == "reprobate"):
+            op = yes_or_no_menu("Are you sure you want to modificate a reprobate student?")
+            if(op ==2):
+                return
+        key = key_menu(camper)
+        new_value = input(f"The last value was '{camper[key]}',type the new value: ")
+        for data in campers:
+            if data["id_number"] == id:
+                data[key] = new_value
+                save_json(campers,file_path)
+                return
 

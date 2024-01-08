@@ -1,28 +1,23 @@
 from commons.utils import *
 from commons.menus import *
 from business.campers import *
+from business.trainers import *
+from business.classrooms import *
 import os
 import json
 # # # generate the inicial list of students
-campers = student_generator()
-json_campers = json.dumps(campers,indent=4)#convert the list to json
+# campers = students_generator()
+# json_campers = json.dumps(campers,indent=4)#convert the list to json
 script_directory = os.path.dirname(os.path.abspath(__file__))
-data_directory = os.path.join(script_directory, "data")
-if not os.path.exists(data_directory):# Create the "data" directory if it doesn't exist
-    os.makedirs(data_directory)
+file_path_campers = file_path_generator(script_directory,"data","campers.json") # Initial path Json campers
+# save_json(campers,file_path_campers)
+# # # genarate the inicial list of trainers
+# trainers = trainers_generator()
+file_path_trainers = file_path_generator(script_directory,"data","trainers.json") # Initial path Json trainers
+# save_json(trainers,file_path_trainers)
+file_path_tuition = file_path_generator(script_directory,"data","tuitions.json") # Initial path Json tuitions
+file_path_classrooms = file_path_generator(script_directory,"data","classroomss.json") # Initial path Json tuitions
 
-file_path = os.path.join(data_directory, "general_campers.json") # Define the file path in the "data" directory
-with open(file_path, "w") as file: 
-    file.write(json_campers) # Write the JSON object to the file
-# # # enroll a student
-
-# nuevo_estudiante = añadir_estudiante()
-# campers.append(nuevo_estudiante)
-
-# campers_objeto = json.dumps(campers,indent=4)
-# file = open("campers.json","w")#sobrescribiendo el archivo completo, lo crea si no existe el archivo
-# file.write(campers_objeto)
-# file.close()
 
 # # # menu principal
 
@@ -38,20 +33,43 @@ while (True):
         while(True):
             op = campers_menu()
             if(op == 1):
-                new_camper()
+                new_camper(file_path_campers)
             elif(op == 2):
-                showCampers(file_path)
+                show_Campers(file_path_campers)
             elif(op == 3):
-                print("3. Campers Modification")
+                campers_modifications(file_path_campers)
             elif(op == 4):
-                print("4. Exit")
                 break
     elif op == 2:
-        trainers_menu() 
+        while(True):
+            op = trainers_menu()
+            if(op == 1):
+                new_trainer(file_path_trainers)
+            elif(op == 2):
+                 search_trainer(file_path_trainers)
+            elif(op == 3):
+                trainers_modifications(file_path_trainers)
+            elif(op == 4):
+                break
     elif op == 3:
-        tuition_menu()
+        # while(True):
+            op = tuition_menu()
+        #     if(op == 1):
+        #         new_tuition()
+        #     elif(op == 2):
+        #         search_tuition()
+        #     elif(op == 3):
+        #         tuition_modifications()
+        #     elif(op == 4):
+        #         break
     elif op == 4:
-        classroom_menu()
+        while(True):
+            op = classroom_menu()
+            if(op == 1):
+                new_classroom(file_path_campers,file_path_trainers,file_path_classrooms)
+            elif(op == 4):
+                break
+
     elif op == 5:
         report_menu()
     elif op == 6:
