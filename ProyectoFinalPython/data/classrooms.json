@@ -2,42 +2,42 @@
   {
     "name": "apolo",
     "schedule": "morning",
-    "trainer_id": "101",
+    "trainer_id": "",
     "campers_id": [],
     "route": "java"
   },
   {
     "name": "apolo",
     "schedule": "afternoon",
-    "trainer_id": "110",
+    "trainer_id": "",
     "campers_id": [],
-    "route": "Java"
+    "route": "java"
   },
   {
     "name": "artemis",
     "schedule": "morning",
-    "trainer_id": "103",
+    "trainer_id": "",
     "campers_id": [],
     "route": "NodeJS"
   },
   {
     "name": "artemis",
     "schedule": "afternoon",
-    "trainer_id": "104",
+    "trainer_id": "",
     "campers_id": [],
     "route": "NodeJS"
   },
   {
     "name": "sputnik",
     "schedule": "morning",
-    "trainer_id": "105",
+    "trainer_id": "",
     "campers_id": [],
     "route": "NetCore"
   },
   {
     "name": "sputnik",
     "schedule": "afternoon",
-    "trainer_id": "106",
+    "trainer_id": "",
     "campers_id": [],
     "route": "NetCore"
   }

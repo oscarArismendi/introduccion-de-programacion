@@ -81,6 +81,10 @@ def trainers_modifications(file_path):
         new_value = input(f"The last value was '{trainer[key]}',type the new value: ")
         for data in trainers:
             if data["id_number"] == id:
-                data[key] = new_value
+                if(isinstance(data[key],str)):
+                    data[key] = new_value
+                else:
+                    new_value = new_value.replace("[","").replace("]","")
+                    data[key] = new_value.split(",")
                 save_json(trainers,file_path)
                 return    

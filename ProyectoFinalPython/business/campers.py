@@ -17,11 +17,13 @@ def new_camper(file_path):
         "address" : address,
         "emergency_contact" : emergency_contact,
         "numbers" :[cellphone,landline],
+        "route":"",
+        "trainer_id":"",
         "state" : state    
               }
     campers = load_json(file_path)
     for data in campers:
-        if(data["id_number"] == camper[id]):
+        if(data["id_number"] == id_number):
             input("This person is already in the list\n Press enter to continue:")
             return
     campers.append(camper)
@@ -52,7 +54,11 @@ def campers_modifications(file_path):
         new_value = input(f"The last value was '{camper[key]}',type the new value: ")
         for data in campers:
             if data["id_number"] == id:
-                data[key] = new_value
+                if(isinstance(data[key],str)):
+                    data[key] = new_value
+                else:
+                    new_value = new_value.replace("[","").replace("]","")
+                    data[key] = new_value.split(",")
                 save_json(campers,file_path)
                 return
 

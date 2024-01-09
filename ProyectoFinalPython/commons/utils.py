@@ -9,8 +9,10 @@ def students_generator():
     ]
     names = ["Arthuro","Carlos","Luis","Marta","Ana","Maria"]
     surnames = ["Villalobo","Arismendi","Vega","Nogera","Aceros","Vasquez"]
-    addresses = ["Centro","Bosque","Pidecuentas","Floridablanca","Cabecera","Real de minas"]
-    emergency_contacts = ["Sandra","Maria","Teresa","Fredy","Steven","Wilson"]
+    addresses = ["Centro","Bosque","Pidecuesta","Floridablanca","Cabecera","Real de minas"]
+    emergency_contacts = "31"
+    for i in range(8):
+        emergency_contacts += str(random.randint(0,9))
     cellphone = "31"
     for i in range(8):
         cellphone += str(random.randint(0,9))
@@ -24,8 +26,10 @@ def students_generator():
             "first_name" : names[random.randint(0,5)],
             "last_name" : surnames[random.randint(0,5)]+ " " +surnames[random.randint(0,5)],
             "address" : addresses[random.randint(0,5)],
-            "emergency_contact" : emergency_contacts[random.randint(0,5)],
+            "emergency_contact" : emergency_contacts,
             "numbers" :[cellphone,landline],
+            "route":"",
+            "trainer_id":"",
             "state" : states[random.randint(0,2)]
         }
         campers.append(obje)
@@ -37,7 +41,7 @@ def trainers_generator():
     ]
     names = ["Arthuro","Carlos","Luis","Marta","Ana","Maria"]
     surnames = ["Villalobo","Arismendi","Vega","Nogera","Aceros","Vasquez"]
-    addresses = ["Centro","Bosque","Pidecuentas","Floridablanca","Cabecera","Real de minas"]
+    addresses = ["Centro","Bosque","Pidecuestas","Floridablanca","Cabecera","Real de minas"]
     emergency_contacts = ["Sandra","Maria","Teresa","Fredy","Steven","Wilson"]
     cellphone = "31"
     for i in range(8):
@@ -119,11 +123,19 @@ def print_modified(left_part,text,right_part,last_character):
 
 def stop():
     print_modified("-","","-","-")
-    input("Press enter to continue:")
+    print_modified("-","Press enter to continue:","-","|")
+    input()
 
 def search_for_keys(list_name,key,value):#return a list with dictionaries
-    result = [data for data in list_name if data.get(key).lower() == value.lower()]
-    return result
+    if(isinstance(value,str)):
+        result = [data for data in list_name if data.get(key).lower() == value.lower()]
+        return result
+    else:
+        result = []
+        for data in list_name:
+            if(data[key] == value):
+                result.append(data)
+        return result
 
 def print_card(list_name):
     
@@ -141,4 +153,12 @@ def print_card(list_name):
                 for value in person[data]:
                     print_modified("","-"+value," ","|")
 
+def relationate_json(list_name1,list_name2,file_path2):#modifide list 2 in base to list 1
+    for data1 in list_name1:
+        for key1 in data1:
+            for data2 in list_name2:
+                for key2 in data2:
+                    if(key2 == key1):
+                        list_name2[key2] = list_name1[key1]
+    save_json(list_name2,file_path2)
             

@@ -9,7 +9,7 @@ def new_route(file_path_routes):
         "web_programming":[],
         "formal_programming":[],
         "databases":[],
-        "back_end":[]
+        "backend":[]
     }
     #fundaments_of_programming
     op = yes_or_no_menu("will they see introduction to algoritms?")

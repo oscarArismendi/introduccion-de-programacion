@@ -171,14 +171,6 @@ def Classroom_modification(file_path_campers,file_path_trainers,file_path_classr
             else:
                 classroom[key] = new_value
     save_json(classrooms,file_path_classrooms)
-    # route = ""
-    # route_exist = False
 
-    
 
-    # if(len(campers_qualified) == 0):
-    #     print("There is no campers that ")
-
-    # if(len(trainers_qualified) == 0):
-    #     print("There is no qualified trainers to take the group")    
     

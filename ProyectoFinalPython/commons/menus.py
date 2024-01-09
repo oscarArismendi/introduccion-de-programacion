@@ -9,9 +9,9 @@ def main_menu():
     print("4. Tuition")
     print("5. Classrooms")
     print("6. Reports")
-    print("8. Test")
-    print("9. Exit")       
-    op=option_validation("Option: ",1,9)
+    print("7. Test")
+    print("8. Exit")       
+    op=option_validation("Option: ",1,8)
     return op
 
 def campers_menu():
@@ -35,6 +35,7 @@ def trainers_menu():
     return op
 
 def routes_menu():
+    clean_screen()
     print_modified("-","Routes Menu","-","|")
     print("1. New route")
     print("2. Show routes")
@@ -43,9 +44,10 @@ def routes_menu():
     return op
 
 def tuition_menu():
+    clean_screen()
     print_modified("-","Tuition Menu","-","|")
     print("1. New Tuition")
-    print("2. Search Tuition")
+    print("2. Show Tuitions")
     print("3. Tuition Modification")
     print("4. Exit")
     op=option_validation("Option: ",1,4)
@@ -62,6 +64,7 @@ def classroom_menu():
     return op
 
 def report_menu():
+    clean_screen()
     print_modified("-","Report Menu","-","|")
     print("1. Show campers enrolled")
     print("2. Show campers approved")
@@ -72,6 +75,7 @@ def report_menu():
     return op
 
 def test_menu():
+    clean_screen()
     print_modified("-","Test Menu","-","|")
     print("1. Note of entrance test")
     print("2. Note of filter")
