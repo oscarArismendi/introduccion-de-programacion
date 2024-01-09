@@ -1,0 +1,70 @@
+[
+  {
+    "name": "NodeJS",
+    "fundaments_of_programming": [
+      "Introduction to algoritms",
+      "PSeint",
+      "Python"
+    ],
+    "web_programming": [
+      "HTML",
+      "CSS",
+      "Bootsrap"
+    ],
+    "formal_programming": [
+      "JavaScript"
+    ],
+    "databases": [
+      "MongoDb",
+      "Postgresql"
+    ],
+    "backend": [
+      "NodeJS",
+      "Express"
+    ]
+  },
+  {
+    "name": "Java",
+    "fundaments_of_programming": [
+      "Introduction to algoritms",
+      "PSeint",
+      "Python"
+    ],
+    "web_programming": [
+      "HTML",
+      "CSS"
+    ],
+    "formal_programming": [
+      "Java"
+    ],
+    "databases": [
+      "MongoDbl",
+      "Postgresql"
+    ],
+    "backend": [
+      "Spring Boot"
+    ]
+  },
+  {
+    "name": "NetCore",
+    "fundaments_of_programming": [
+      "Introduction to algoritms",
+      "PSeint",
+      "Python"
+    ],
+    "web_programming": [
+      "HTML",
+      "CSS"
+    ],
+    "formal_programming": [
+      "C#"
+    ],
+    "databases": [
+      "Mysql",
+      "MongoDb"
+    ],
+    "backend": [
+      "NetCore"
+    ]
+  }
+]

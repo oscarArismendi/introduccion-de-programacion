@@ -1,0 +1,44 @@
+[
+  {
+    "name": "apolo",
+    "schedule": "morning",
+    "trainer_id": "101",
+    "campers_id": [],
+    "route": "java"
+  },
+  {
+    "name": "apolo",
+    "schedule": "afternoon",
+    "trainer_id": "110",
+    "campers_id": [],
+    "route": "Java"
+  },
+  {
+    "name": "artemis",
+    "schedule": "morning",
+    "trainer_id": "103",
+    "campers_id": [],
+    "route": "NodeJS"
+  },
+  {
+    "name": "artemis",
+    "schedule": "afternoon",
+    "trainer_id": "104",
+    "campers_id": [],
+    "route": "NodeJS"
+  },
+  {
+    "name": "sputnik",
+    "schedule": "morning",
+    "trainer_id": "105",
+    "campers_id": [],
+    "route": "NetCore"
+  },
+  {
+    "name": "sputnik",
+    "schedule": "afternoon",
+    "trainer_id": "106",
+    "campers_id": [],
+    "route": "NetCore"
+  }
+]

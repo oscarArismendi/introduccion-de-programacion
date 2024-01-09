@@ -357,7 +357,7 @@
       "3152118342",
       "6076887745"
     ],
-    "state": "enrolled"
+    "state": "approved"
   },
   {
     "id_number": "31",
@@ -381,7 +381,7 @@
       "3152118342",
       "6076887745"
     ],
-    "state": "enrolled"
+    "state": "reprobate"
   },
   {
     "id_number": "33",
@@ -393,6 +393,6 @@
       "3152118342",
       "6076887745"
     ],
-    "state": "approved"
+    "state": "reprobate"
   }
 ]

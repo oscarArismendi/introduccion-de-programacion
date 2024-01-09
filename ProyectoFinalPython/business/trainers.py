@@ -18,9 +18,12 @@ def new_trainer(file_path):
     print("2. Java")
     print("3. NetCore")
     op = option_validation("Option: ",1,3)
-
     route = ["NodeJS","Java","NetCore"][op-1]
-
+    print("Choose the schedule of the trainer:")
+    print("1. Morning")
+    print("2. Afternoon")
+    op = option_validation("Option: ",1,2)
+    schedule = ["morning","afternoon"][op-1]
     trainer = {
         "id_number":id_number,
         "first_name":first_name,
@@ -28,7 +31,8 @@ def new_trainer(file_path):
         "address" : address,
         "emergency_contact" : emergency_contact,
         "numbers" :[cellphone,landline],
-        "route" : route    
+        "route" : route,
+        "schedule" : schedule    
               }
     
     trainers.append(trainer)

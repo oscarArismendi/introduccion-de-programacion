@@ -18,7 +18,7 @@ def students_generator():
     for i in range(0,6,1):
         landline += str(random.randint(0,9))
     states = ["enrolled","approved","reprobate"]
-    for i in range(0,33,1):#(33) 0 1 2 --- 32 
+    for i in range(0,100,1):#(33) 0 1 2 --- 32 
         obje = {
             "id_number":str(i+1),
             "first_name" : names[random.randint(0,5)],
@@ -46,7 +46,8 @@ def trainers_generator():
     for i in range(0,6,1):
         landline += str(random.randint(0,9))
     routes = ["NodeJS","Java","NetCore"]
-    for i in range(0,6,1):#(33) 0 1 2 --- 32 
+    schedules = ["morning","afternoon"]
+    for i in range(0,10,1):
         obje = {
             "id_number":str(i+101),
             "first_name" : names[random.randint(0,5)],
@@ -54,7 +55,8 @@ def trainers_generator():
             "address" : addresses[random.randint(0,5)],
             "emergency_contact" : emergency_contacts[random.randint(0,5)],
             "numbers" :[cellphone,landline],
-            "route" : routes[random.randint(0,2)]
+            "route" : routes[random.randint(0,2)],
+            "schedule" : schedules[random.randint(0,1)]
         }
         trainers.append(obje)
     return trainers
@@ -107,7 +109,11 @@ def option_validation(statement,lower,upper):#return a int >= lower and <= upper
             print("Please, type a valid number.")
 
 def print_modified(left_part,text,right_part,last_character):
-    left = int((50-len(text))/2)
+    
+    if(left_part == ""):
+        left = 0
+    else:
+        left = int((50-len(text))/2)
     right = 50 - left - len(text)-1
     print((left_part*left)+text+(right_part*right)+last_character)
 
@@ -116,7 +122,23 @@ def stop():
     input("Press enter to continue:")
 
 def search_for_keys(list_name,key,value):#return a list with dictionaries
-    result = [data for data in list_name if data.get(key) == value]
+    result = [data for data in list_name if data.get(key).lower() == value.lower()]
     return result
-    stop()
+
+def print_card(list_name):
     
+    for person in list_name:
+        print(("-"*49)+"|")
+        for data in person:
+            spaces_len = 44-len(data)
+            if(isinstance(person[data],str)):
+                spaces_len -= len(person[data])
+                print(data,":",person[data],(" "*spaces_len),"|")    
+
+            else:
+                
+                print_modified("",str(data).replace("_"," ")+":"," ","|")
+                for value in person[data]:
+                    print_modified("","-"+value," ","|")
+
+            
